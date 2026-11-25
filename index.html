@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./TaskManager.js" defer></script>
+    <title>TaskManagementApp</title>
+
+</head>
+
+<body>
+
+    <h1>Task Manager</h1>
+
+    <label for="item-inputtask">Enter Task Name :</label>
+    <input type="text" id="item-inputtask" placeholder="Enter Task Name">
+    
+    <label for="item-inputcategory">Enter Category Name :</label>
+    <input type="text" id="item-inputcategory" placeholder="Enter Category">
+    
+    <label for="item-deadline">Select Deadline:</label>
+    <input type="date" id="item-deadline" required>
+    
+    <label for="item-inputstatus">Select Status:</label>
+    <select id="item-inputstatus">
+
+        <option value="In Progress" selected>In Progress</option>
+        <option value="Completed">Completed</option>
+
+    </select>
+
+    <button id="addTask-btn">Add Task</button>
+
+    <!-- <div id="filter-tasks">
+
+        <label for="filter-category">Filter by Category:</label>
+
+        <select id="filter-category">
+
+            <option value="All">All Categories</option>
+
+        </select>
+
+        <label for="filter-status">Filter by Status:</label>
+        <select id="filter-status">
+
+            <option value="All">All Statuses</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+            <option value="Overdue">Overdue</option>
+
+        </select>
+
+    </div> -->
+
+    <h2>Task List</h2>
+
+    <ol id="task-list"></ol>
+
+</body>
+
+</html>
